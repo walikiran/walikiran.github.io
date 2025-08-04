@@ -2,99 +2,86 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kiran Wali | Linux & AWS Administrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Wali | Linux & AWS Consultant</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white">
 
   <!-- Navbar -->
-  <nav class="bg-gray-950 shadow fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <a href="#" class="text-xl font-bold text-white">Kiran Wali</a>
-        <div class="space-x-6 hidden md:flex">
-          <a href="#about" class="text-gray-300 hover:text-blue-400">About</a>
-          <a href="#services" class="text-gray-300 hover:text-blue-400">Services</a>
-          <!-- <a href="#projects" class="text-gray-300 hover:text-blue-400">Projects</a> -->
-          <a href="#contact" class="text-gray-300 hover:text-blue-400">Contact</a>
-        </div>
-      </div>
+  <header class="fixed w-full z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Kiran Wali</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#about" class="text-gray-300 hover:text-indigo-400">About</a>
+        <a href="#services" class="text-gray-300 hover:text-indigo-400">Services</a>
+        <a href="#contact" class="text-gray-300 hover:text-indigo-400">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero -->
-<section class="text-center py-32 bg-gray-800" id="hero" data-aos="fade-up">
-  <img src="kiran.jpeg" alt="Kiran Wali" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-gray-700 hover:scale-105 transform transition duration-300" />
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">Kiran Wali</h1>
-  <p class="text-xl md:text-2xl text-gray-300">Linux System Administrator & AWS Consultant</p>
-  <p class="mt-4 text-gray-400 max-w-2xl mx-auto">I help teams build, deploy, monitor and scale secure infrastructure on Linux and AWS.</p>
-</section>
-
+  <section class="pt-32 pb-20 text-center bg-gradient-to-b from-gray-900 to-gray-800">
+    <div class="max-w-3xl mx-auto px-6">
+      <img src="./profile.jpg" alt="Kiran Wali" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-indigo-500">
+      <h2 class="text-4xl font-bold">Linux & AWS Consultant</h2>
+      <p class="text-gray-400 mt-4 text-lg">Helping teams deploy, monitor, and scale secure infrastructure on cloud and Linux servers.</p>
+    </div>
+  </section>
 
   <!-- About -->
-  <section class="py-20 px-6 max-w-4xl mx-auto" id="about" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="text-gray-300">I’m a Linux and AWS administrator with experience in building reliable infrastructure, automation using Bash/Python/Ansible, and ensuring compliance and security for cloud environments. I’ve deployed CI/CD pipelines, optimized cloud costs, and managed infrastructure for clients at scale.</p>
-    <ul class="mt-4 text-gray-400 list-disc list-inside">
-      <li>AWS (EC2, S3, SES, IAM, VPC, CloudWatch)</li>
-      <li>Linux (Ubuntu, CentOS, Server Hardening)</li>
-      <li>Infrastructure as Code: Terraform, Ansible</li>
-      <li>Monitoring: Prometheus, Grafana</li>
-      <li>Email Infrastructure: MailWizz, Postal, Mautic, SMTP, DNS</li>
+  <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-300 leading-loose">I'm an experienced system administrator specialized in Linux and AWS. I help businesses automate infrastructure using Bash, Python, and Ansible while ensuring security, compliance, and performance.</p>
+    <ul class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-400 list-disc list-inside">
+      <li>AWS (EC2, S3, SES, IAM, VPC)</li>
+      <li>Linux (Ubuntu, CentOS)</li>
+      <li>Terraform, Ansible</li>
+      <li>Monitoring (Prometheus, Grafana)</li>
+      <li>CI/CD (GitHub Actions, Jenkins)</li>
+      <li>Email Infra (MailWizz, Postfix, SMTP)</li>
     </ul>
   </section>
 
   <!-- Services -->
-  <section class="bg-gray-800 py-20 px-6 max-w-4xl mx-auto" id="services" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-6 text-center">Services I Offer</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition duration-300">
-        <h3 class="text-xl font-bold mb-2">AWS Infrastructure Setup</h3>
-        <p class="text-gray-300">VPC, EC2, S3, IAM, SES, CloudFront, Route53 — with security & cost optimization.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition duration-300">
-        <h3 class="text-xl font-bold mb-2">Linux Server Deployment</h3>
-        <p class="text-gray-300">Provisioning, hardening, shell scripting, backup, and automation on Ubuntu, CentOS.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition duration-300">
-        <h3 class="text-xl font-bold mb-2">CI/CD & Automation</h3>
-        <p class="text-gray-300">Setup GitHub Actions, GitLab CI, Jenkins, Docker pipelines, and Ansible provisioning.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition duration-300">
-        <h3 class="text-xl font-bold mb-2">Email & SMTP Infrastructure</h3>
-        <p class="text-gray-300">Setup MailWizz/Postfix, domain warm-up, bounce handling, and deliverability tracking.</p>
+  <section id="services" class="bg-gray-800 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Services I Offer</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-700 p-8 rounded-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-indigo-400 mb-2">AWS Infrastructure Setup</h3>
+          <p class="text-gray-300">VPC, EC2, S3, IAM, SES, CloudFront — secure, scalable, cost-efficient architecture.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-indigo-400 mb-2">Linux Server Deployment</h3>
+          <p class="text-gray-300">Provisioning, hardening, automation on Ubuntu/CentOS with shell scripting.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-indigo-400 mb-2">DevOps & CI/CD Automation</h3>
+          <p class="text-gray-300">GitHub Actions, Jenkins, Docker pipelines, and config management with Ansible.</p>
+        </div>
+        <div class="bg-gray-700 p-8 rounded-xl hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold text-indigo-400 mb-2">Email Infrastructure Setup</h3>
+          <p class="text-gray-300">Custom SMTP servers, MailWizz, domain warm-up, tracking & bounce handling.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="bg-gray-900 py-20 px-6 text-center" id="contact" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
-    <p class="text-gray-300">📧 <a href="mailto:kirankumar1517@gmail.com" class="underline text-blue-400">kirankumar1517@gmail.com</a></p>
-    <p class="text-gray-400 mt-2">🔗 
-      <a href="https://www.linkedin.com/in/wali-kiran/" class="underline text-blue-400">LinkedIn</a> | 
-      <a href="https://github.com/walikiran" class="underline text-blue-400">GitHub</a>
-    </p>
+  <section id="contact" class="py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <p class="text-gray-400">📧 <a href="mailto:kirankumar1517@gmail.com" class="text-indigo-400 underline">kirankumar1517@gmail.com</a></p>
+    <p class="text-gray-400 mt-2">🔗 <a href="https://www.linkedin.com/in/wali-kiran/" target="_blank" class="text-indigo-400 underline">LinkedIn</a> | <a href="https://github.com/walikiran" target="_blank" class="text-indigo-400 underline">GitHub</a></p>
   </section>
 
   <footer class="text-center text-gray-500 py-6 text-sm">
     © 2025 Kiran Wali. All rights reserved.
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 800,
-    });
-  </script>
 </body>
 </html>
